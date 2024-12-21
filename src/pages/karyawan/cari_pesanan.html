@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../styles/output.css" rel="stylesheet">
+</head>
+<body class="font-poppins text-black">
+    <nav class="bg-blue-dark border-gray-200">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 ">
+                <li>
+                <a href="../../home_karyawan.html" class="block py-2 px-3 md:p-0 text-xl font-semibold text-white bg-blue-dark rounded hover:text-blue-light md:bg-transparent" aria-current="page">Beranda</a>
+                </li>
+                <li>
+                <a href="../../account_karyawan.html" class="block py-2 px-3 md:p-0 text-xl font-semibold text-white rounded hover:bg-gray-100 hover:text-blue-light md:hover:bg-transparent">Akun Saya</a>
+                </li>
+            </ul>
+            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                <button onclick="location.href='../../index.html'" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center">Keluar</button>
+                <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 " aria-controls="navbar-cta" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- Section 1 -->
+    <div class="relative bg-cover bg-karyawan min-h-screen bg-center bg-blend-multiply bg-blue-500 justify-center items-center flex flex-col">
+        <div class="absolute inset-x-0 top-0 bg-gradient-to-b from-blue-dark to-transparent h-24 z-20">
+        </div>
+        <div class="absolute inset-x-0 top-0 bg-white opacity-15 h-full z-10">
+        </div>
+        <h1 class="text-5xl text-shadow shadow-black font-bold leading-tight text-center tracking-tight text-white md:text-5xl z-20">
+            Pesanan Pelanggan
+        </h1>
+        <!-- Main Content -->
+        <div class="container mx-auto mt-5 text-black items-center z-50">
+            <div class="text-center w-full flex flex-col items-center">
+                <div class="form-control w-1/2">
+                    <label class="input input-bordered bg-white flex items-center gap-2">
+                        <input type="text" class="grow" placeholder="Search" />
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 16 16"
+                          fill="currentColor"
+                          class="h-4 w-4 opacity-70">
+                          <path
+                            fill-rule="evenodd"
+                            d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+                            clip-rule="evenodd" />
+                        </svg>
+                    </label>
+                </div>
+            </div>
+        
+            <!-- Customer List -->
+            <div class="m-10 p-8 bg-white rounded-lg">
+                <div class="overflow-x-auto">
+                    <div class="flex flex-row  items-center justify-between border-b-2 border-blue-light p-2">
+                        <div class="flex flex-col items-start">
+                            <p class="font-semibold text-sm">001-000-000</p>
+                            <p class="font-semibold text-base">Cuci + Setrika</p>
+                            <p class="font-semibold text-sm">Rp 000.000</p>
+                            <p class="font-semibold text-sm status text-blue-500">Sedang diperoses</p>
+                        </div>
+                        <button onclick="updateStatus(this)" class="btn hover:bg-blue-dark bg-blue-light text-white border-0">Perbarui</button>
+                    </div>
+                    <div class="flex flex-row  items-center justify-between border-b-2 border-blue-light p-2">
+                        <div class="flex flex-col items-start">
+                            <p class="font-semibold text-sm">001-000-000</p>
+                            <p class="font-semibold text-base">Cuci + Setrika</p>
+                            <p class="font-semibold text-sm">Rp 000.000</p>
+                            <p class="font-semibold text-sm status text-blue-500">Sedang diperoses</p>
+                        </div>
+                        <button onclick="updateStatus(this)" class="btn hover:bg-blue-dark bg-blue-light text-white border-0">Perbarui</button>
+                    </div>
+                    <div class="flex flex-row  items-center justify-between border-b-2 border-blue-light p-2">
+                        <div class="flex flex-col items-start">
+                            <p class="font-semibold text-sm">001-000-000</p>
+                            <p class="font-semibold text-base">Cuci + Setrika</p>
+                            <p class="font-semibold text-sm">Rp 000.000</p>
+                            <p class="font-semibold text-sm status text-blue-500">Sedang diperoses</p>
+                        </div>
+                        <button onclick="updateStatus(this)" class="btn hover:bg-blue-dark bg-blue-light text-white border-0">Perbarui</button>
+                    </div>
+                    <div class="flex flex-row  items-center justify-between border-b-2 border-blue-light p-2">
+                        <div class="flex flex-col items-start">
+                            <p class="font-semibold text-sm">001-000-000</p>
+                            <p class="font-semibold text-base">Cuci + Setrika</p>
+                            <p class="font-semibold text-sm">Rp 000.000</p>
+                            <p class="font-semibold text-sm status text-blue-500">Sedang diperoses</p>
+                        </div>
+                        <button onclick="updateStatus(this)" class="btn hover:bg-blue-dark bg-blue-light text-white border-0">Perbarui</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+         function updateStatus(button) {
+            // Define the statuses and corresponding colors
+            const statuses = [
+                { text: "Belum diterima", color: "text-red-500" },
+                { text: "Belum diproses", color: "text-orange-500" },
+                { text: "Sedang diproses", color: "text-blue-500" },
+                { text: "Selesai", color: "text-green-500" },
+            ];
+
+            // Find the status element within the same container
+            const statusElement = button
+                .closest(".flex")
+                .querySelector(".status");
+
+            // Get the current status text
+            const currentStatus = statusElement.textContent;
+
+            // Find the current status index
+            const currentIndex = statuses.findIndex(
+                (status) => status.text === currentStatus
+            );
+
+            // Calculate the next status index
+            const nextIndex = (currentIndex + 1) % statuses.length;
+
+            // Update the status text and color
+            statusElement.textContent = statuses[nextIndex].text;
+
+            // Remove the previous color class and add the new one
+            statuses.forEach((status) => {
+                statusElement.classList.remove(status.color);
+            });
+            statusElement.classList.add(statuses[nextIndex].color);
+        }
+    </script>
+</body>
+</html>
